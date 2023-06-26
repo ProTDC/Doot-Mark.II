@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doot Mark.II", "Doot Mark.II\Doot Mark.II.csproj", "{120DA184-72C2-42B5-B2A4-4DE70217CA2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{120DA184-72C2-42B5-B2A4-4DE70217CA2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120DA184-72C2-42B5-B2A4-4DE70217CA2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120DA184-72C2-42B5-B2A4-4DE70217CA2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120DA184-72C2-42B5-B2A4-4DE70217CA2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00E77E65-051D-470B-BC10-BDC9FB0669BF}
+	EndGlobalSection
+EndGlobal
