@@ -50,3 +50,29 @@ C:\Users\protd\source\repos\Github Repos\Doot-Mark.II\Doot Mark.II\Doot Mark.II\
 C:\Users\protd\source\repos\Github Repos\Doot-Mark.II\Doot Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.pdb
 C:\Users\protd\source\repos\Github Repos\Doot-Mark.II\Doot Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.genruntimeconfig.cache
 C:\Users\protd\source\repos\Github Repos\Doot-Mark.II\Doot Mark.II\Doot Mark.II\obj\Debug\net6.0\ref\Doot Mark.II.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Doot Mark.II.exe
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Doot Mark.II.deps.json
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Doot Mark.II.runtimeconfig.json
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Doot Mark.II.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Doot Mark.II.pdb
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\ConcurrentCollections.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\DSharpPlus.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\DSharpPlus.CommandsNext.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\DSharpPlus.Interactivity.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\DSharpPlus.SlashCommands.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Debug\net6.0\System.Collections.Immutable.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.csproj.AssemblyReference.cache
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.AssemblyInfoInputs.cache
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.AssemblyInfo.cs
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.csproj.CoreCompileInputs.cache
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.csproj.CopyComplete
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\refint\Doot Mark.II.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.pdb
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\Doot Mark.II.genruntimeconfig.cache
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\obj\Debug\net6.0\ref\Doot Mark.II.dll

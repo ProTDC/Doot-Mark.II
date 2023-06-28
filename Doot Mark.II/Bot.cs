@@ -56,12 +56,17 @@ namespace Doot_Mark.II
 
             Commands = Client.UseCommandsNext(commandConfig);
             var slashCommandsConfig = Client.UseSlashCommands();
-            
+
+            //Help Formatter
+            Commands.SetHelpFormatter<HelpFormatter>();
+
             //Prefix Commands
             Commands.RegisterCommands<UserCommands>();
 
             //Slash Commands
             slashCommandsConfig.RegisterCommands<UserSL>();
+            slashCommandsConfig.RegisterCommands<OljefondetSL>();
+            slashCommandsConfig.RegisterCommands<GuildSL>();
 
             Client.MessageCreated += async (s, e) =>
             {

@@ -21,18 +21,20 @@ namespace Doot_Mark.II.SlashCommands
             await ctx.Channel.SendMessageAsync("Doot!");
         }
 
-        [SlashCommand("User", "User Information")]
+        [SlashCommand("User", "Displays User Information")]
         public async Task UserSlashCommand(InteractionContext ctx, [Option("User", "Type inn a User")] DiscordUser user)
         {
             await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder()
                 .WithContent("Found User"));
+
+            await ctx.Channel.TriggerTypingAsync();
 
             DiscordGuild guild = ctx.Guild;
             var member = await guild.GetMemberAsync(user.Id);
 
             var embedMessage = new DiscordEmbedBuilder
             {
-                Title = member.DisplayName,
+                Title = $"{member.DisplayName} ({member.Username})",
                 Color = member.Color,
 
                 Thumbnail = new DiscordEmbedBuilder.EmbedThumbnail
@@ -40,6 +42,10 @@ namespace Doot_Mark.II.SlashCommands
                     Url = member.AvatarUrl
                 }
             };
+
+            embedMessage.AddField("ID", member.Id.ToString());
+            embedMessage.AddField("Status", member.Presence.ClientStatus.Desktop.Value.ToString());
+            embedMessage.AddField("Is a Bot?", member.IsBot.ToString());
 
             //Roles
             var roles = member.Roles;
@@ -62,10 +68,21 @@ namespace Doot_Mark.II.SlashCommands
             embedMessage.AddField("Account Created", member.CreationTimestamp.DateTime.ToLongDateString());
             embedMessage.AddField("Joined Server", member.Guild.JoinedAt.DateTime.ToLongDateString());
 
-
-            embedMessage.AddField("Created", user.CreationTimestamp.ToString());
+            embedMessage.AddField("Has Swag?", "mmm nahh not really...");
 
             await ctx.Channel.SendMessageAsync(embedMessage);
+        }
+
+        [SlashCommand("Avatar", "Displays a Users Avatar")]
+        public async Task AvatarSlashCommand(InteractionContext ctx, [Option("User", "Type inn a User")] DiscordUser user)
+        {
+            await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder()
+               .WithContent("Found User"));
+
+            DiscordGuild guild = ctx.Guild;
+            var member = await guild.GetMemberAsync(user.Id);
+
+            await ctx.Channel.SendMessageAsync(member.GuildAvatarUrl);
         }
     }
 }
