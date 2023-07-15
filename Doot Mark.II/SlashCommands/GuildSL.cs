@@ -21,12 +21,17 @@ namespace Doot_Mark.II.SlashCommands
             var embedMessage = new DiscordEmbedBuilder
             {
                 Title = $"{ctx.Guild.Name}",
+                Description = $"{ctx.Guild.Id}",
 
                 Thumbnail = new DiscordEmbedBuilder.EmbedThumbnail
                 {
                     Url = ctx.Guild.IconUrl
                 }
             };
+
+            embedMessage.AddField("Owned by", ctx.Guild.Owner.DisplayName);
+
+            embedMessage.AddField("Roles", ctx.Guild.Roles.Count().ToString());
 
             embedMessage.AddField("Members", ctx.Guild.MemberCount.ToString());
 

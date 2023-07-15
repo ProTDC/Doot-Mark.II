@@ -44,7 +44,6 @@ namespace Doot_Mark.II.SlashCommands
             };
 
             embedMessage.AddField("ID", member.Id.ToString());
-            embedMessage.AddField("Status", member.Presence.ClientStatus.Desktop.Value.ToString());
             embedMessage.AddField("Is a Bot?", member.IsBot.ToString());
 
             //Roles
@@ -69,7 +68,6 @@ namespace Doot_Mark.II.SlashCommands
             embedMessage.AddField("Joined Server", member.Guild.JoinedAt.DateTime.ToLongDateString());
 
             embedMessage.AddField("Has Swag?", "mmm nahh not really...");
-
             await ctx.Channel.SendMessageAsync(embedMessage);
         }
 
