@@ -35,6 +35,8 @@ namespace Doot_Mark.II.SlashCommands
 
             embedMessage.AddField("Members", ctx.Guild.MemberCount.ToString());
 
+            embedMessage.AddField("Channels", ctx.Guild.Channels.Count().ToString());
+
             embedMessage.AddField("Created", ctx.Guild.CreationTimestamp.DateTime.ToLongDateString());
 
             await ctx.Channel.SendMessageAsync(embedMessage);

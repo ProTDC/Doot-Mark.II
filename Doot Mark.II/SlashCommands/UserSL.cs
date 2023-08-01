@@ -49,6 +49,7 @@ namespace Doot_Mark.II.SlashCommands
             //Roles
             var roles = member.Roles;
             string role = string.Empty;
+
             if (roles.Count() == 0)
             {
                 embedMessage.AddField("Roles", "No roles");

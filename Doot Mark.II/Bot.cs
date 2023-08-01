@@ -2,6 +2,7 @@
 using Doot_Mark.II.SlashCommands;
 using DSharpPlus;
 using DSharpPlus.CommandsNext;
+using DSharpPlus.Entities;
 using DSharpPlus.EventArgs;
 using DSharpPlus.Interactivity;
 using DSharpPlus.Interactivity.Extensions;
@@ -67,6 +68,52 @@ namespace Doot_Mark.II
             slashCommandsConfig.RegisterCommands<UserSL>();
             slashCommandsConfig.RegisterCommands<OljefondetSL>();
             slashCommandsConfig.RegisterCommands<GuildSL>();
+            slashCommandsConfig.RegisterCommands<WeatherSL>();
+
+            //Emojis
+            var flagBritish = DiscordEmoji.FromName(Client, ":flag_gb:");
+            var vomit = DiscordEmoji.FromName(Client, ":face_vomiting:");
+            var pensive = DiscordEmoji.FromName(Client, ":pensive:");
+
+
+            Client.GuildCreated += async (s, e) =>
+            {
+                if (e.Guild.SystemChannel.Equals(null))
+                {
+                    return;
+                }
+                else
+                {
+                    await e.Guild.SystemChannel.SendMessageAsync("big mistake").ConfigureAwait(false);
+                    return;
+                }
+
+            };
+
+            Client.GuildMemberAdded += async (s, e) =>
+            {
+                if (e.Guild.SystemChannel.Equals(null))
+                {
+                    return;
+                }
+                else
+                {
+                    await e.Guild.SystemChannel.SendMessageAsync($"Hewwo {e.Member.Mention} :3").ConfigureAwait(false);
+                    return;
+                }
+            };
+
+            Client.GuildMemberRemoved += async (s, e) =>
+            {
+                if (e.Guild.SystemChannel.Equals(null))
+                {
+                    return;
+                }
+                else
+                {
+                    await e.Guild.SystemChannel.SendMessageAsync($"{e.Member.Mention} has left us... {pensive}").ConfigureAwait(false);
+                }
+            };
 
             Client.MessageCreated += async (s, e) =>
             {
@@ -76,9 +123,26 @@ namespace Doot_Mark.II
                 if (e.Message.Content.ToLower().Contains("doot"))
                 {
                     await e.Channel.TriggerTypingAsync();
-                    await e.Message.RespondAsync("DOOT!").ConfigureAwait(false);
+                    await e.Message.RespondAsync("Doot").ConfigureAwait(false);
                 }
 
+                if (e.Message.Content.ToLower().Contains(":3"))
+                {
+                    await e.Channel.TriggerTypingAsync();
+                    await e.Channel.SendMessageAsync(":3").ConfigureAwait(false);
+                }
+
+                if (e.Message.Content.ToLower().Contains("british") || e.Message.Content.ToLower().Contains("bri'ish") || e.Message.Content.ToLower().Contains("briish"))
+                {
+                    await e.Message.CreateReactionAsync(flagBritish).ConfigureAwait(false);
+                    await e.Message.CreateReactionAsync(vomit).ConfigureAwait(false);
+                }
+
+            };
+
+            Client.MessageDeleted += async (s, e) =>
+            {
+                await e.Channel.SendMessageAsync($"{e.Message.Author.Mention} just deleted a message. The message was: {e.Message.Content}");
             };
 
             await Client.ConnectAsync();
