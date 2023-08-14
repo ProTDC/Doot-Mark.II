@@ -20,7 +20,7 @@ namespace Doot_Mark.II.SlashCommands
         {
 
             await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder()
-                .WithContent("Found City"));
+                .WithContent($"Found City {message}"));
 
             var api_key = API_Keys.weatherKey;
             var city = message;
