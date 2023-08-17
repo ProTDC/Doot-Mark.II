@@ -18,7 +18,6 @@ namespace Doot_Mark.II.SlashCommands
         [SlashCommand("Weather", "Displays the Weather in a City")]
         public async Task WeatherSlashCommand(InteractionContext ctx, [Option("City", "Type inn a City")] string message)
         {
-
             await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder()
                 .WithContent($"Found City {message}"));
 

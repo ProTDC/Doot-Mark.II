@@ -69,6 +69,8 @@ namespace Doot_Mark.II
             slashCommandsConfig.RegisterCommands<OljefondetSL>();
             slashCommandsConfig.RegisterCommands<GuildSL>();
             slashCommandsConfig.RegisterCommands<WeatherSL>();
+            slashCommandsConfig.RegisterCommands<MoviesSL>();
+            slashCommandsConfig.RegisterCommands<FunSL>();
 
             //Emojis
             var flagBritish = DiscordEmoji.FromName(Client, ":flag_gb:");
