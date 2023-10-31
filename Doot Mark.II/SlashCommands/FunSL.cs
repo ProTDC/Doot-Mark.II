@@ -28,6 +28,8 @@ namespace Doot_Mark.II.SlashCommands
             else
             {
                 await ctx.Channel.SendMessageAsync("Tails").ConfigureAwait(false);
+
+                Console.WriteLine(rInt);
             }
         }
     }

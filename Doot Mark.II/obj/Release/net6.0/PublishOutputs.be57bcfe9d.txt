@@ -1,0 +1,15 @@
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Doot Mark.II.exe
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Doot Mark.II.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Doot Mark.II.deps.json
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Doot Mark.II.runtimeconfig.json
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Doot Mark.II.pdb
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\ConcurrentCollections.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\DSharpPlus.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\DSharpPlus.CommandsNext.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\DSharpPlus.Interactivity.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\DSharpPlus.SlashCommands.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\Newtonsoft.Json.dll
+C:\Users\protd\source\repos\Doot-Mark.II\Doot Mark.II\bin\Release\net6.0\publish\System.Collections.Immutable.dll
